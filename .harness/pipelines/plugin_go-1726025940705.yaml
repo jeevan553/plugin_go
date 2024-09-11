@@ -50,7 +50,7 @@ pipeline:
                   name: docker_build
                   spec:
                     connectorRef: <+input>
-                    repo: jeevan553/plugin_first_build
+                    repo: jeevan553/my-drone-plugin
                     tags:
                       - latest
                     caching: true
