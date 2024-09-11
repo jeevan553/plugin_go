@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_plugin_go_1726025948211-push-trigger-input-set
+  identifier: Build_plugin_go_1726025948211pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_plugin_go_1726025948211
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
