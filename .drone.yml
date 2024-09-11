@@ -2,7 +2,9 @@ kind: pipeline
 type: docker
 name: default
 
-pipeline:
-  my_plugin_step:
-    image: test
-    input: "Hello from Drone"
+steps:
+- name: greeting
+  image: jeevan553/drone-plugin:latest
+  commands:
+  - echo hello
+  - echo world
