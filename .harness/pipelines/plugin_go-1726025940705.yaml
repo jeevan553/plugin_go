@@ -54,6 +54,14 @@ pipeline:
                     repo: jeevan553/first_plugin_go
                     tags:
                       - latest
+              - step:
+                  type: Run
+                  name: Run_4
+                  identifier: Run_4
+                  spec:
+                    connectorRef: account.harnessImage
+                    image: jeevan553/first_plugin_go
+                    shell: Sh
           platform:
             os: Linux
             arch: Arm64
