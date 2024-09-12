@@ -62,6 +62,7 @@ pipeline:
                     connectorRef: account.harnessImage
                     image: jeevan553/first_plugin_go
                     shell: Sh
+                    command: go build
           platform:
             os: Linux
             arch: Arm64
